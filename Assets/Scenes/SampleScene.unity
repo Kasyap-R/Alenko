@@ -3614,7 +3614,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: 608aac956a5f58d44ae4dcd2e9e56fb2, type: 2}
     - target: {fileID: 5348729095349931954, guid: 9b35fe7c84a016c479d412a48982ceb7, type: 3}
       propertyPath: m_ApplyRootMotion
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5432585088624849238, guid: 9b35fe7c84a016c479d412a48982ceb7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28576,6 +28576,7 @@ GameObject:
   - component: {fileID: 543450652169914274}
   - component: {fileID: 1212173294}
   - component: {fileID: 1212173295}
+  - component: {fileID: 919132148436999449}
   m_Layer: 0
   m_Name: Abandoned_area
   m_TagString: Untagged
@@ -28583,6 +28584,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &919132148436999449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919132148436999448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1a1e6eafad062f408b34ba099cc4693, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transparentBlueMaterial: {fileID: 2100000, guid: b510847ad9423484eb8c749f5545c8a0, type: 2}
+  originalMaterial: {fileID: 2100000, guid: 0585a22d4dd26a642a8f5e357c3c9ca7, type: 2}
+  wallObjects:
+  - {fileID: 7360916405122456370}
+  - {fileID: 2761288641303500959}
+  - {fileID: 7767399746689467491}
+  - {fileID: 7022968516897800395}
 --- !u!23 &922350566319600654
 MeshRenderer:
   m_ObjectHideFlags: 0
