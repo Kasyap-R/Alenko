@@ -21,6 +21,7 @@ public class ThermalVision3D : MonoBehaviour
 
     private void Start()
     {
+        smokeParticleSystem.Stop();
         // Initially set the Canvas to not be visible
         if (thermalCanvas != null)
         {
@@ -38,6 +39,7 @@ public class ThermalVision3D : MonoBehaviour
 
     private void ToggleThermalVision()
     {
+        smokeParticleSystem.Play();
         if (thermalCanvas != null)
         {
             thermalCanvas.enabled = !thermalCanvas.enabled; // Toggle the thermal effect canvas

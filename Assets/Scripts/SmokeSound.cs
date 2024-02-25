@@ -11,6 +11,7 @@ public class SmokeSound : MonoBehaviour
     {
         // Find the AudioSource component on the child GameObject
         audioSource = GetComponentInChildren<AudioSource>();
+        smokeEffect.Stop();
     }
 
     void Update()
