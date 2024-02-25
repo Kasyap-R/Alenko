@@ -8,7 +8,7 @@ public class WheelController : MonoBehaviour
 
     public float turningRate = 0f;
     public float m_Speed = 0f;
-
+    Animator animator;
     private AudioSource audioSource;
 
     // Sound effects
@@ -19,13 +19,12 @@ public class WheelController : MonoBehaviour
     private bool isMoving = false;
     private bool stopSoundPlayed = false;
 
-
-
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.centerOfMass = new Vector3(0, -1f, 0);
         audioSource = GetComponentInChildren<AudioSource>();
+        animator = gameObject.GetComponent<Animator>();
     }
 
     private void FixedUpdate()
@@ -49,6 +48,8 @@ public class WheelController : MonoBehaviour
                 audioSource.clip = robotStart;
                 audioSource.Play();
                 audioSource.loop = false; // Start sound should not loop
+                animator.SetBool("IsRolling", true);
+                
             }
             else if (audioSource.clip != robotMove && !audioSource.isPlaying)
             {
@@ -58,11 +59,13 @@ public class WheelController : MonoBehaviour
                 audioSource.loop = true; // Move sound should loop
             }
             isMoving = true;
+
         }
         else if (isMoving)
         {
             isMoving = false;
             audioSource.loop = false; // Stop Looping
+            animator.SetBool("IsRolling", false);
         }
     }
 
