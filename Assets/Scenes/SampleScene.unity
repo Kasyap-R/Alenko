@@ -6891,7 +6891,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913743557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.1176, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7703,7 +7703,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1039295500}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 4.22, z: 0.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7740,8 +7740,8 @@ MonoBehaviour:
   m_Camera: {fileID: 1596094114}
   m_OriginBaseGameObject: {fileID: 1039295500}
   m_CameraFloorOffsetObject: {fileID: 913743557}
-  m_RequestedTrackingOriginMode: 0
-  m_CameraYOffset: 1.1176
+  m_RequestedTrackingOriginMode: 1
+  m_CameraYOffset: 4
 --- !u!154 &1044059591
 TerrainCollider:
   m_ObjectHideFlags: 0
@@ -15803,7 +15803,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596094110}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.013, y: 3.13, z: 0.164}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
